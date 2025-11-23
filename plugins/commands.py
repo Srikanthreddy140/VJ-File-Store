@@ -153,7 +153,7 @@ async def start(client, message):
                 file = getattr(info, file_type.value)
                 f_caption = getattr(info, 'caption', '')
                 if f_caption:
-                    f_caption = f"@VJ_Bots {f_caption.html}"
+                    f_caption = f"@ROYALBOMMASR3 {f_caption.html}"
                 old_title = getattr(file, "file_name", "")
                 title = formate_file_name(old_title)
                 size=get_size(int(file.file_size))
@@ -163,7 +163,7 @@ async def start(client, message):
                     except:
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"@VJ_Bots {title}"
+                    f_caption = f"@ROYALBOMMASR3 {title}"
                 if STREAM_MODE == True:
                     if info.video or info.document:
                         log_msg = info
